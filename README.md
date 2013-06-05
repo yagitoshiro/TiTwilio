@@ -16,15 +16,15 @@ if(Ti.Platform.osname === 'android'){
 
 // login
 TiTwilio.login({
-  url: 'http://your-auth-server.example.com',
-  params: {key: value, post: data},
+  url: 'http://your-auth-server.example.com', // auth server (required)
+  params: {key: value, post: data}, // post data (optional)
   pendingIntent: pendingIntent
 });
 
 // call
 TiTwilio.connect({
-  url: 'http://your-auth-server.example.com',
-  params: {key: value, post: data}
+  url: 'http://your-auth-server.example.com', // auth server (required)
+  params: {key: value, post: data} // post data (optional)
 });
 
 // handle incoming connection
@@ -33,7 +33,7 @@ TiTwilio.addEventListener('incomingConnection', function(e){
   if(Ti.Platform.osname == 'android'){
    intent = e.intent;
   }
-  TiTwilio.acceptIncomngCall({intent: intent});
+  TiTwilio.acceptIncomngCall({intent: intent}); // intent can be null for iOS
   //TiTwilio.ignoreIncomingCall({intent: intent});
 });
 ```
