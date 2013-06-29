@@ -108,7 +108,7 @@ public class TwilioandroidModule extends KrollModule implements DeviceListener
 		if(args.containsKey("url")){
 			this.url = args.get("url").toString();
 			//TODO
-			phone = null;
+			//phone = null;
 			
 			try{
 				if(phone == null){

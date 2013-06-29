@@ -20,6 +20,7 @@ import com.twilio.client.Device;
 import com.twilio.client.Device.Capability;
 import com.twilio.client.DeviceListener;
 import com.twilio.client.PresenceEvent;
+import ti.modules.titanium.android.PendingIntentProxy;
 
 public class TwilioPhone implements Twilio.InitListener
 {
@@ -50,25 +51,27 @@ public class TwilioPhone implements Twilio.InitListener
 		Log.d(TAG, "Twilio SDK is ready");
 		this.capabilityToken = null;
 		this.device = null;
-		try {
-			this.capabilityToken = HttpHelper.httpGet(this.url);
-			this.device = Twilio.createDevice(this.capabilityToken, null);
-			Log.d(TAG, this.capabilityToken);
-			if(this.pendingIntent != null){
-				Log.d(TAG, "setting pending intent");
-				device.setIncomingIntent(pendingIntent);
-			}else{
-				Log.d(TAG, "incoming call unavailable");
-			}
-		} catch (Exception e) {
-          	Log.e(TAG, "Failed to obtain capability token: " + e.getLocalizedMessage());
-		}
+    getCapabilityToken(this.url, this.pendingIntent);
+		//try {
+		//	this.capabilityToken = HttpHelper.httpGet(this.url);
+		//	this.device = Twilio.createDevice(this.capabilityToken, null);
+		//	Log.d(TAG, this.capabilityToken);
+		//	if(this.pendingIntent != null){
+		//		Log.d(TAG, "setting pending intent");
+		//		device.setIncomingIntent(pendingIntent);
+		//	}else{
+		//		Log.d(TAG, "incoming call unavailable");
+		//	}
+		//} catch (Exception e) {
+    //      	Log.e(TAG, "Failed to obtain capability token: " + e.getLocalizedMessage());
+		//}
 	}
 	
-	private void getCapabilityToken(String url){
+	private void getCapabilityToken(String url, PendingIntent intent){
 		this.capabilityToken = null;
 		this.device = null;
 		try {
+      this.pendingIntent = intent;
 			this.capabilityToken = HttpHelper.httpGet(url);
 			this.device = Twilio.createDevice(this.capabilityToken, null);
 			Log.d(TAG, this.capabilityToken);
@@ -85,7 +88,10 @@ public class TwilioPhone implements Twilio.InitListener
 	
 	public void connect(KrollDict args) throws RuntimeException{
 		if(device == null){
-			this.getCapabilityToken(args.get("url").toString());
+			//this.getCapabilityToken(args.get("url").toString());
+			PendingIntentProxy proxy = (PendingIntentProxy) args.get("pendingIntent");
+			PendingIntent pendingIntent = proxy.getPendingIntent();
+		  this.getCapabilityToken(args.get("url").toString(), pendingIntent);
 		}
 		if(args.containsKey("params") && args.get("params") instanceof HashMap){
 			HashMap<String, String> params = (HashMap<String, String>) args.get("params");
@@ -101,7 +107,9 @@ public class TwilioPhone implements Twilio.InitListener
 	
 	public void login(KrollDict args){
 		Log.d(TAG, "loging in!");
-		this.getCapabilityToken(args.get("url").toString());
+		PendingIntentProxy proxy = (PendingIntentProxy) args.get("pendingIntent");
+		PendingIntent pendingIntent = proxy.getPendingIntent();
+		this.getCapabilityToken(args.get("url").toString(), pendingIntent);
 	}
 	
 	public void handleIncomingConnection(Device inDevice, Connection inConnection) {
