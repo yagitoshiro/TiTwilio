@@ -1,5 +1,5 @@
 //
-//  Copyright 2011-2012 Twilio. All rights reserved.
+//  Copyright 2011-2015 Twilio. All rights reserved.
 //
 //  Use of this software is subject to the terms and conditions of the 
 //  Twilio Terms of Service located at http://www.twilio.com/legal/tos
@@ -11,13 +11,13 @@
 
 /** TCConnectionState is an enum representing the current status of TCConnection.
  */
-typedef enum
+typedef NS_ENUM(NSInteger, TCConnectionState)
 {
 	TCConnectionStatePending = 0,	/**< An incoming TCConnection has not yet been accepted. */
 	TCConnectionStateConnecting,	/**< An incoming TCConnection has been accepted, or an outgoing TCConnection is being established. */
 	TCConnectionStateConnected,		/**< A connection has been established. */
 	TCConnectionStateDisconnected	/**< An open connection has been disconnected. */
-} TCConnectionState;
+};
 
 
 /** @name Incoming connection parameter capability keys */
@@ -31,9 +31,12 @@ extern NSString* const TCConnectionIncomingParameterFromKey; /**< NSString repre
 extern NSString* const TCConnectionIncomingParameterToKey; /**< NSString representing the client name of the called party.  This is in a URI format "client:name" */
 extern NSString* const TCConnectionIncomingParameterAccountSIDKey; /**< NSString representing the account id making the incoming call */
 extern NSString* const TCConnectionIncomingParameterAPIVersionKey; /**< NSString representing the version of the Twilio API used in the server application */
-extern NSString* const TCConnectionIncomingParameterCallSIDKey; /**< NSString representing a unique identifier for the incoming call */
+extern NSString* const TCConnectionIncomingParameterCallSIDKey DEPRECATED_ATTRIBUTE; /**< NSString representing a unique identifier for the incoming call */
 
-// Outgoing parameters are completely up to application developers and thus there are no constants for them here.
+// Included in both Incoming and Outgoing parameters dictionaries
+extern NSString* const TCConnectionParameterCallSIDKey; /**< NSString representing a unique identifier for the incoming call */
+
+// Outgoing parameters besides CallSid are completely up to application developers and thus there are no constants for them here.
 
 
 /** A TCConnection object represents the connection between a TCDevice and Twilio's services.
@@ -57,11 +60,11 @@ extern NSString* const TCConnectionIncomingParameterCallSIDKey; /**< NSString re
  Incoming connection parameters are defined by the "Incoming connection parameter capability keys".
  Outgoing connection parameters are defined by the union of optional application parameters specified in the Capability Token and any additional parameters specified when the -[TCDevice connect:delegate:] method is called.
  */
-@property (nonatomic, readonly) NSDictionary* parameters;
+@property (weak, nonatomic, readonly) NSDictionary* parameters;
 
 /** The delegate object which will receive TCConnection events.
  */
-@property (nonatomic, assign) id<TCConnectionDelegate> delegate;
+@property (nonatomic, weak) id<TCConnectionDelegate> delegate;
 
 /** Property that defines if the connection's microphone is muted.
 
@@ -89,7 +92,7 @@ extern NSString* const TCConnectionIncomingParameterCallSIDKey; /**< NSString re
 /** Rejects an incoming connection request.
  
  When the TCDeviceDelegate receives a -[TCDeviceDelegate device:didReceiveIncomingConnection:] message, calling reject will terminate the request, notifying the caller that the call was rejected. Calling this method on a TCConnection that is not in the TCConnectionStatePending state will have no effect.
- The TCConnectionDelegate will eventually receive a -[TCConnectionDelegate connectionDidDisconnect:] message once the connection is terminated.
+ The TCConnectionDelegate will not receive a -[TCConnectionDelegate connectionDidDisconnect:] message since there was no actual connection created.
 
  @returns None
  */
