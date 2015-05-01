@@ -15,4 +15,4 @@ name: TiTwilio
 moduleid: org.selfkleptomaniac.mod.titwilio
 guid: be8ecb45-1ed2-4fef-a979-1e4a9dcb8bce
 platform: iphone
-minsdk: 3.0.2.GA
+minsdk: 3.5.0.GA

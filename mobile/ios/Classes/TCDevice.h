@@ -1,5 +1,5 @@
 //
-//  Copyright 2011-2012 Twilio. All rights reserved.
+//  Copyright 2011-2015 Twilio. All rights reserved.
 //
 //  Use of this software is subject to the terms and conditions of the 
 //  Twilio Terms of Service located at http://www.twilio.com/legal/tos
@@ -14,12 +14,12 @@
 
  The TCDeviceDelegate gets notified of the state changes.
  */
-typedef enum
+typedef NS_ENUM(NSInteger, TCDeviceState)
 {
 	TCDeviceStateOffline = 0,		/**< TCDevice The device is not connected and cannot receive incoming connections or make outgoing connections. */
 	TCDeviceStateReady,				/**< TCDevice can receive incoming connections and attempt outgoing connections if capabilities allow. */
 	TCDeviceStateBusy				/**< TCDevice is connected to the network and has an active connection.  No additional connections can be created or accepted. */
-} TCDeviceState;
+};
 
 /** @name Device capability keys */
 
@@ -57,12 +57,12 @@ extern NSString* const TCDeviceCapabilityClientNameKey; /**< NSString representi
 
 /** Current capabilities of the TCDevice.  The keys are defined by the "Device capability keys" constants.
   */
-@property (nonatomic, readonly) NSDictionary* capabilities;
+@property (weak, nonatomic, readonly) NSDictionary* capabilities;
 
 
 /** The delegate object which will receive events from a TCDevice object.
  */
-@property (nonatomic, assign) id<TCDeviceDelegate> delegate;
+@property (nonatomic, weak) id<TCDeviceDelegate> delegate;
 
 /** A BOOL indicating if a sound should be played for an incoming connection.
  
@@ -131,7 +131,7 @@ extern NSString* const TCDeviceCapabilityClientNameKey; /**< NSString representi
 
 /** Create an outgoing connection. 
 	
- @param parameters An optional dictionary containing parameters for the outgoing connection that get passed to your Twilio Application.  These parameters are merged with any parameters supplied in the Capability Token (e.g. the dictionary retrived with the TCDeviceCapabilityApplicationParametersKey against the capabilities property).  If there are any key collisions with the two dictionaries, the value(s) from TCDeviceCapabilityApplicationParametersKey dictionary will take precedence.
+ @param parameters An optional dictionary containing parameters for the outgoing connection that get passed to your Twilio Application.  These parameters are merged with any parameters supplied in the Capability Token (e.g. the dictionary retrived with the TCDeviceCapabilityApplicationParametersKey against the capabilities property).  If there are any key collisions with the two dictionaries, the value(s) from TCDeviceCapabilityApplicationParametersKey dictionary will take precedence. Parameters other than NSString are ignored.
   
  @param delegate An optional delegate object to receive callbacks when state changes occur to the TCConnection object.
 
