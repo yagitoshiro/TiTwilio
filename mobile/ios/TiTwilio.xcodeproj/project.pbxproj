@@ -26,19 +26,18 @@
 		24DD6CFA1134B3F500162E58 /* OrgSelfkleptomaniacModTitwilioModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* OrgSelfkleptomaniacModTitwilioModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.m */; };
-		387999C11728D68E006705FD /* TCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 387999BB1728D68E006705FD /* TCConnection.h */; };
-		387999C21728D68E006705FD /* TCConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 387999BC1728D68E006705FD /* TCConnectionDelegate.h */; };
-		387999C31728D68E006705FD /* TCDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 387999BD1728D68E006705FD /* TCDevice.h */; };
-		387999C41728D68E006705FD /* TCDeviceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 387999BE1728D68E006705FD /* TCDeviceDelegate.h */; };
-		387999C51728D68E006705FD /* TCPresenceEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 387999BF1728D68E006705FD /* TCPresenceEvent.h */; };
-		387999C61728D68E006705FD /* TwilioClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 387999C01728D68E006705FD /* TwilioClient.h */; };
-		387999C81728D9D3006705FD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387999C71728D9D3006705FD /* AVFoundation.framework */; };
-		387999CC1728F60B006705FD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387999C91728F60B006705FD /* libcrypto.a */; };
-		387999CD1728F60B006705FD /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387999CA1728F60B006705FD /* libssl.a */; };
-		387999CE1728F60B006705FD /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387999CB1728F60B006705FD /* libTwilioClient.a */; };
-		387999D01728F83F006705FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387999CF1728F83F006705FD /* AudioToolbox.framework */; };
-		387999D31728F8E5006705FD /* BasicPhoneNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 387999D11728F8E5006705FD /* BasicPhoneNotifications.h */; };
-		387999D41728F8E5006705FD /* BasicPhoneNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 387999D21728F8E5006705FD /* BasicPhoneNotifications.m */; };
+		384228571B698CC400BAF9CB /* TCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 384228511B698CC400BAF9CB /* TCConnection.h */; };
+		384228581B698CC400BAF9CB /* TCConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 384228521B698CC400BAF9CB /* TCConnectionDelegate.h */; };
+		384228591B698CC400BAF9CB /* TCDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 384228531B698CC400BAF9CB /* TCDevice.h */; };
+		3842285A1B698CC400BAF9CB /* TCDeviceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 384228541B698CC400BAF9CB /* TCDeviceDelegate.h */; };
+		3842285B1B698CC400BAF9CB /* TCPresenceEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 384228551B698CC400BAF9CB /* TCPresenceEvent.h */; };
+		3842285C1B698CC400BAF9CB /* TwilioClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 384228561B698CC400BAF9CB /* TwilioClient.h */; };
+		384228601B698CF200BAF9CB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3842285D1B698CF200BAF9CB /* AudioToolbox.framework */; };
+		384228611B698CF200BAF9CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3842285E1B698CF200BAF9CB /* AVFoundation.framework */; };
+		384228621B698CF200BAF9CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3842285F1B698CF200BAF9CB /* SystemConfiguration.framework */; };
+		384228661B698D3800BAF9CB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 384228631B698D3800BAF9CB /* libcrypto.a */; };
+		384228671B698D3800BAF9CB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 384228641B698D3800BAF9CB /* libssl.a */; };
+		384228681B698D3800BAF9CB /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 384228651B698D3800BAF9CB /* libTwilioClient.a */; };
 		AA747D9F0F9514B9006C5449 /* OrgSelfkleptomaniacModTitwilio_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* OrgSelfkleptomaniacModTitwilio_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -59,19 +58,18 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrgSelfkleptomaniacModTitwilioModuleAssets.h; path = Classes/OrgSelfkleptomaniacModTitwilioModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrgSelfkleptomaniacModTitwilioModuleAssets.m; path = Classes/OrgSelfkleptomaniacModTitwilioModuleAssets.m; sourceTree = "<group>"; };
-		387999BB1728D68E006705FD /* TCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCConnection.h; path = Classes/TCConnection.h; sourceTree = "<group>"; };
-		387999BC1728D68E006705FD /* TCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCConnectionDelegate.h; path = Classes/TCConnectionDelegate.h; sourceTree = "<group>"; };
-		387999BD1728D68E006705FD /* TCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCDevice.h; path = Classes/TCDevice.h; sourceTree = "<group>"; };
-		387999BE1728D68E006705FD /* TCDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCDeviceDelegate.h; path = Classes/TCDeviceDelegate.h; sourceTree = "<group>"; };
-		387999BF1728D68E006705FD /* TCPresenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCPresenceEvent.h; path = Classes/TCPresenceEvent.h; sourceTree = "<group>"; };
-		387999C01728D68E006705FD /* TwilioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwilioClient.h; path = Classes/TwilioClient.h; sourceTree = "<group>"; };
-		387999C71728D9D3006705FD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		387999C91728F60B006705FD /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
-		387999CA1728F60B006705FD /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
-		387999CB1728F60B006705FD /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTwilioClient.a; sourceTree = "<group>"; };
-		387999CF1728F83F006705FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		387999D11728F8E5006705FD /* BasicPhoneNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicPhoneNotifications.h; path = Classes/BasicPhoneNotifications.h; sourceTree = "<group>"; };
-		387999D21728F8E5006705FD /* BasicPhoneNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicPhoneNotifications.m; path = Classes/BasicPhoneNotifications.m; sourceTree = "<group>"; };
+		384228511B698CC400BAF9CB /* TCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCConnection.h; path = Classes/TCConnection.h; sourceTree = "<group>"; };
+		384228521B698CC400BAF9CB /* TCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCConnectionDelegate.h; path = Classes/TCConnectionDelegate.h; sourceTree = "<group>"; };
+		384228531B698CC400BAF9CB /* TCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCDevice.h; path = Classes/TCDevice.h; sourceTree = "<group>"; };
+		384228541B698CC400BAF9CB /* TCDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCDeviceDelegate.h; path = Classes/TCDeviceDelegate.h; sourceTree = "<group>"; };
+		384228551B698CC400BAF9CB /* TCPresenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCPresenceEvent.h; path = Classes/TCPresenceEvent.h; sourceTree = "<group>"; };
+		384228561B698CC400BAF9CB /* TwilioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwilioClient.h; path = Classes/TwilioClient.h; sourceTree = "<group>"; };
+		3842285D1B698CF200BAF9CB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3842285E1B698CF200BAF9CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3842285F1B698CF200BAF9CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		384228631B698D3800BAF9CB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		384228641B698D3800BAF9CB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		384228651B698D3800BAF9CB /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTwilioClient.a; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* OrgSelfkleptomaniacModTitwilio_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgSelfkleptomaniacModTitwilio_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libOrgSelfkleptomaniacModTitwilio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOrgSelfkleptomaniacModTitwilio.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,12 +80,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387999D01728F83F006705FD /* AudioToolbox.framework in Frameworks */,
-				387999C81728D9D3006705FD /* AVFoundation.framework in Frameworks */,
+				384228661B698D3800BAF9CB /* libcrypto.a in Frameworks */,
+				384228671B698D3800BAF9CB /* libssl.a in Frameworks */,
+				384228681B698D3800BAF9CB /* libTwilioClient.a in Frameworks */,
+				384228601B698CF200BAF9CB /* AudioToolbox.framework in Frameworks */,
+				384228611B698CF200BAF9CB /* AVFoundation.framework in Frameworks */,
+				384228621B698CF200BAF9CB /* SystemConfiguration.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
-				387999CC1728F60B006705FD /* libcrypto.a in Frameworks */,
-				387999CD1728F60B006705FD /* libssl.a in Frameworks */,
-				387999CE1728F60B006705FD /* libTwilioClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +104,6 @@
 		0867D691FE84028FC02AAC07 /* TiTwilio */ = {
 			isa = PBXGroup;
 			children = (
-				387999CF1728F83F006705FD /* AudioToolbox.framework */,
-				387999C71728D9D3006705FD /* AVFoundation.framework */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -118,9 +115,12 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				387999C91728F60B006705FD /* libcrypto.a */,
-				387999CA1728F60B006705FD /* libssl.a */,
-				387999CB1728F60B006705FD /* libTwilioClient.a */,
+				384228631B698D3800BAF9CB /* libcrypto.a */,
+				384228641B698D3800BAF9CB /* libssl.a */,
+				384228651B698D3800BAF9CB /* libTwilioClient.a */,
+				3842285D1B698CF200BAF9CB /* AudioToolbox.framework */,
+				3842285E1B698CF200BAF9CB /* AVFoundation.framework */,
+				3842285F1B698CF200BAF9CB /* SystemConfiguration.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -129,14 +129,12 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				387999D11728F8E5006705FD /* BasicPhoneNotifications.h */,
-				387999D21728F8E5006705FD /* BasicPhoneNotifications.m */,
-				387999BB1728D68E006705FD /* TCConnection.h */,
-				387999BC1728D68E006705FD /* TCConnectionDelegate.h */,
-				387999BD1728D68E006705FD /* TCDevice.h */,
-				387999BE1728D68E006705FD /* TCDeviceDelegate.h */,
-				387999BF1728D68E006705FD /* TCPresenceEvent.h */,
-				387999C01728D68E006705FD /* TwilioClient.h */,
+				384228511B698CC400BAF9CB /* TCConnection.h */,
+				384228521B698CC400BAF9CB /* TCConnectionDelegate.h */,
+				384228531B698CC400BAF9CB /* TCDevice.h */,
+				384228541B698CC400BAF9CB /* TCDeviceDelegate.h */,
+				384228551B698CC400BAF9CB /* TCPresenceEvent.h */,
+				384228561B698CC400BAF9CB /* TwilioClient.h */,
 				24DE9E0F11C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* OrgSelfkleptomaniacModTitwilioModule.h */,
@@ -162,15 +160,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* OrgSelfkleptomaniacModTitwilio_Prefix.pch in Headers */,
+				3842285C1B698CC400BAF9CB /* TwilioClient.h in Headers */,
+				384228591B698CC400BAF9CB /* TCDevice.h in Headers */,
 				24DD6CF91134B3F500162E58 /* OrgSelfkleptomaniacModTitwilioModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.h in Headers */,
-				387999C11728D68E006705FD /* TCConnection.h in Headers */,
-				387999C21728D68E006705FD /* TCConnectionDelegate.h in Headers */,
-				387999C31728D68E006705FD /* TCDevice.h in Headers */,
-				387999C41728D68E006705FD /* TCDeviceDelegate.h in Headers */,
-				387999C51728D68E006705FD /* TCPresenceEvent.h in Headers */,
-				387999C61728D68E006705FD /* TwilioClient.h in Headers */,
-				387999D31728F8E5006705FD /* BasicPhoneNotifications.h in Headers */,
+				384228571B698CC400BAF9CB /* TCConnection.h in Headers */,
+				3842285B1B698CC400BAF9CB /* TCPresenceEvent.h in Headers */,
+				384228581B698CC400BAF9CB /* TCConnectionDelegate.h in Headers */,
+				3842285A1B698CC400BAF9CB /* TCDeviceDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +197,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiTwilio" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -246,7 +243,6 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* OrgSelfkleptomaniacModTitwilioModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* OrgSelfkleptomaniacModTitwilioModuleAssets.m in Sources */,
-				387999D41728F8E5006705FD /* BasicPhoneNotifications.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +280,8 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -324,13 +318,8 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 5.1.1;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphonesimulator*]" = 5.1.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OrgSelfkleptomaniacModTitwilio;
@@ -344,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/OrgSelfkleptomaniacModTitwilio.dst;
@@ -363,7 +353,6 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
@@ -384,6 +373,7 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				DSTROOT = /tmp/OrgSelfkleptomaniacModTitwilio.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
@@ -401,9 +391,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 5.1.1;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphonesimulator*]" = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OrgSelfkleptomaniacModTitwilio;

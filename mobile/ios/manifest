@@ -2,17 +2,17 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.1
+version: 0.1.1
 apiversion: 2
-description: Twilio module
+architectures: armv7 arm64 i386 x86_64
+description: TiTwilio
 author: Toshiro Yagi
 license: MIT
-copyright: Toshiro Yagi
-
+copyright: Copyright (c) 2015 by Toshiro Yagi
 
 # these should not be edited
 name: TiTwilio
 moduleid: org.selfkleptomaniac.mod.titwilio
-guid: be8ecb45-1ed2-4fef-a979-1e4a9dcb8bce
+guid: d08b6fa9-890e-4f8b-a1da-4b9c74f36e05
 platform: iphone
-minsdk: 3.5.0.GA
+minsdk: 3.5.1.GA
