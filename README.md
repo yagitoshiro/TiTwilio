@@ -82,6 +82,12 @@ Accept an incoming call. Intent can be null for iOS.
 
 Ignore an incoming call. Intent can be null for iOS.
 
+#### disconnect():void
+Ends the current connection.
+
+#### setSpeakerEnabled(bool):void
+Toggle speaker usage.
+
 ----
 
 
